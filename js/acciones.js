@@ -8,8 +8,9 @@ function consulta()
 			data: datos
 		}).done(function(mensaje){
 			alert(mensaje);
-		});
-	} alert("cerrando");
+		}); 
+		alert("cerrando");
+	}
 $(document).ready(function(e) {
 document.addEventListener("deviceready",function(){
 $("#btnconsulta").on("tap",function(){
