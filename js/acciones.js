@@ -1,6 +1,6 @@
 // JavaScript Document
 function consulta()
-	{
+	{ alert("entrando");
 		datos="";
 		$.ajax({
 			type: "POST",
@@ -9,7 +9,7 @@ function consulta()
 		}).done(function(mensaje){
 			alert(mensaje);
 		});
-	}
+	} alert("cerrando");
 $(document).ready(function(e) {
 document.addEventListener("deviceready",function(){
 $("#btnconsulta").on("tap",function(){
