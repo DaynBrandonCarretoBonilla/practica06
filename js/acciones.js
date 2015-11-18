@@ -4,7 +4,7 @@ function consulta()
 
 		$.ajax({
 			type: "POST",
-			url: "192.168.1.30/procesar.php",
+			url: "http://192.168.1.30/procesar.php",
 			success: function(msj){
 				alert ("exito" + msj);
 			},
