@@ -14,7 +14,7 @@ function consulta()
 			 alert ("error" +throwError);	
 			},
 			complete: function(data){
-			 	alert ("datos" +data);
+			 	alert (json.ecode (data));
 			}
 		});
 				
