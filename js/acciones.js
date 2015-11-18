@@ -6,15 +6,15 @@ function consulta()
 			type: "POST",
 			url: "192.168.1.30/procesar.php",
 			success: function(msj){
-				alert (msj);
+				alert ("exito" + msj);
 			},
 			error: function(xhr, ajaxOptions, throwError)
 			{
-				alert (xhr.sttus);
-			 alert (throwError);	
+				alert ("estatus" +xhr.sttus);
+			 alert ("error" +throwError);	
 			},
 			complete: function(data){
-			 	alert (data);
+			 	alert ("datos" +data);
 			}
 		});
 				
