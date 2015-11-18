@@ -1,6 +1,6 @@
 // JavaScript Document
 function consulta()
-	{ alert("entrando");
+	{ 
 
 		$.ajax({
 			type: "POST",
@@ -8,9 +8,10 @@ function consulta()
 			success: function(msj){
 				alert (msj);
 			},
-			error: function()
+			error: function(xhr, ajaxOptions, throwError)
 			{
-			 alert ("error");	
+				alert (xhr.sttus);
+			 alert (throwError);	
 			},
 			complete: function(data){
 			 	alert (data);
@@ -19,7 +20,7 @@ function consulta()
 				
 
 			
-		alert("cerrando");
+		
 	}
 $(document).ready(function(e) {
 document.addEventListener("deviceready",function(){
