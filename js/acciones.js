@@ -1,14 +1,24 @@
 // JavaScript Document
 function consulta()
 	{ alert("entrando");
-		datos="";
+
 		$.ajax({
 			type: "POST",
 			url: "192.168.1.30/procesar.php",
-			data: datos
-		}).done(function(mensaje){
-			alert(mensaje);
-		}); 
+			success: function(msj){
+				alert (msj);
+			},
+			error: function()
+			{
+			 alert ("error");	
+			},
+			complete: function(data){
+			 	alert (data);
+			}
+		});
+				
+
+			
 		alert("cerrando");
 	}
 $(document).ready(function(e) {
