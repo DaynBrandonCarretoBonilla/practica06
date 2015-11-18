@@ -1,10 +1,5 @@
 // JavaScript Document
-$(document).ready(function(e) {
-document.addEventListener("deviceready",function(){
-$("#btnconsulta").on("tap",function(){
-	alert("Preguntando...");
-	consulta();
-	function consulta()
+function consulta()
 	{
 		datos="";
 		$.ajax({
@@ -15,6 +10,12 @@ $("#btnconsulta").on("tap",function(){
 			alert(mensaje);
 		});
 	}
+$(document).ready(function(e) {
+document.addEventListener("deviceready",function(){
+$("#btnconsulta").on("tap",function(){
+	alert("Preguntando...");
+	consulta();
+	
 });
 }); 
 });
